@@ -11,7 +11,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         document.querySelector('.container .row').innerHTML += 
     //STRUTTURA DELLE CARDS
     `
-    <div class="col-3">
+    <div class="col-6 col-sm-4">
         <div class="card">
             <img src="${element.url}">
             <h4 id="card-title" class="card-title">${element.title}</h4>
