@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
 .header{
     background-image: url("./img/wall.png");
     text-align: center;
@@ -5,4 +9,18 @@
 
 .main{
     background-image: url("./img/cork.png");
+}
+
+.card>img{
+    padding: 8px;
+}
+
+.card-title{
+    font-family: "Edu TAS Beginner", serif;
+    padding-left: 3px;
+}
+
+.card-text{
+    font-family: "Sometype Mono", serif;
+    padding-left: 3px;
 }

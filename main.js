@@ -15,7 +15,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         <div class="card">
             <img src="${element.url}">
             <h4 id="card-title" class="card-title">${element.title}</h4>
-            <p id="card-text">${element.date}</p>
+            <p id="card-text" class="card-text">${element.date}</p>
         </div>
     </div>
     `
