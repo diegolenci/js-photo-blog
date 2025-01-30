@@ -9,11 +9,17 @@
     background-image: url("./img/wall.png");
     text-align: center;
     align-content: center;
-    height: 100px;
+    height: 20vh;
+}
+
+.title{
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .main{
     background-image: url("./img/cork.png");
+    
 }
 
 .card{
