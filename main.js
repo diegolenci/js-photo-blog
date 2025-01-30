@@ -11,8 +11,9 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         document.querySelector('.container .row').innerHTML += 
     //STRUTTURA DELLE CARDS
     `
-    <div class="col-6 col-sm-4">
-        <div class="card">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card position-relative my-3">
+            <img src="./img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
             <img src="${element.url}">
             <h4 id="card-title" class="card-title">${element.title}</h4>
             <p id="card-text" class="card-text">${element.date}</p>
