@@ -13,7 +13,7 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
         document.querySelector('.container .row').innerHTML += 
     //STRUTTURA DELLE CARDS
     `
-    <div class="col-sm-12 col-md-6 col-lg-4 posts">
+    <div class="col-sm-12 col-md-6 col-lg-4 posts" data-id='${element.id}'>
         <div class="card position-relative my-3">
             <img src="./img/pin.svg" class="position-absolute top-0 start-50 translate-middle">
             <img src="${element.url}">
@@ -25,13 +25,15 @@ fetch("https://lanciweb.github.io/demo/api/pictures/")
     arrayPosts = document.querySelectorAll('.posts')
 
     });
-    const zoom = document.getElementById('zoom')
+    const overlay = document.querySelector('.overlay')
+    const overlayImg = document.querySelector('.overlay img')
 
     console.log(arrayPosts)
     //AL CLICK DELLA CARD SI APRE LA FOTO
     arrayPosts.forEach(element =>{
         element.addEventListener('click', function(){
-            zoom.classList.remove("d-none")
+            overlay.classList.remove("d-none")
+            overlayImg.setAttribute('src',`https://marcolanci.it/boolean/assets/pictures/${element.getAttribute('data-id')}.png`)
         })
     })
 
